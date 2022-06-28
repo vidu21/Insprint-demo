@@ -177,7 +177,7 @@ h6{
         margin-top: 150px;
     }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   .form-subscribe {
    width: 100%;
     height: 20em;
@@ -188,5 +188,22 @@ h6{
     order:vertical;
     
   }
+	   .btn
+{
+  border-top-left-radius:36px;
+  border-bottom-left-radius:36px;
+  margin-top: 10px;
+  height:39px;
+}
+.form-subscribe .form-control
+{
+ 
+ 
+  border:none;
+  border-top-right-radius:36px;
+  border-bottom-right-radius:36px;
+  height: 60px;
+  width: 100%;
+}
 
 }
