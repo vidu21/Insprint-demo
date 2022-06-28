@@ -4,12 +4,9 @@
 	box-sizing: border-box;
 }
 
-html,body{
+html{
 	font-size: 10px;
 	font-family: "Roboto Cn", sans-serif;
-    overflow-x: hidden;
-	height:auto!important;
-/* 	overflow-y: scroll; */
     
 }
 
