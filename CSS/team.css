@@ -1,0 +1,8 @@
+.team-container{
+    width: 100%;
+	height: 60vh;
+	background: linear-gradient(rgba(127, 127, 127, 0.8), navy);
+    background-size: cover;
+	position: relative;
+  overflow: hidden;
+}
