@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/home/vidusingh/Insprint/img/logo.jpeg" type="image/icon type">
+    <title>INSPRINT Technologies</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/nav.css" >
+    <link rel="stylesheet" href="CSS/contact.css" >
+</head>
+<body style="
+background: linear-gradient(to bottom, rgba(127, 127, 127, 0.8), rgba(132, 131, 131, 0.748)),
+  url(/home/vidusingh/Insprint/img/logo.jpeg) center no-repeat;
+  background-size: cover;">
+   
+        <div class="menu-toggle" id="hamburger">
+            <i style="color: #7ae0f7"class="fas fa-bars"></i>
+        </div>
+        <div class="overlay"></div>
+        <div class="container">
+            <nav>
+                <h1 class="brand"><a href="index.html">INS<span>P</span>RINT Technologies</a></h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+      
+
+<div class="container-newsletter">
+	<div class="row">
+			<h1>Contact Us</h1>
+	</div>
+	<div class="row">
+			<h4 style="text-align:center">We'd love to hear from you!
+      
+        If you have any questions or queries a member of staff will always be happy to help. 
+        Feel free to contact us by email and we will be sure to get back to you as soon as possible.
+      
+      </h4>
+	</div>
+    <form action="mailto: vidu.s1999@gmail.com" method="post" enctype="text/plain">
+	<div class="row input-container">
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" name="name" required />
+					<label>Name</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input">
+					<input type="text" name="Email" required />
+					<label>Email</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input" style="float:right;">
+					<input type="text" name = "Contact Number"required />
+					<label>Phone Number</label> 
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea name="Message" required></textarea>
+					<label>Message</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+                <input type="submit" class="btn-lrg submit-btn" value="Send Message" >
+				
+			</div>
+        </form>
+	</div>
+
+    <div class="row-map">
+        <div class="column-map">
+          <img src="/home/vidusingh/Insprint/img/map.png" alt="Snow" style="width:100%">
+        </div>
+        <div class="column-map" >
+            <p class="contact-det">Contact Us:
+                <br>
+                <i class='fas fa-map-pin' style="margin-top:20px ;">Address</i>
+                <br>
+            <i class="fa fa-envelope" style="margin-top:20px ;" >
+                hr@insprint.com
+            </i>
+            <i class="fa fa-envelope" style="margin-top:20px ;">
+                Info@insprint.com
+            </i>
+            <i class="fa fa-envelope" style="margin-top:20px ;">
+                Accounts@insprint.com
+            </i>
+            <i class="fa fa-envelope" style="margin-top:20px ;">
+                Legal@insprint.com
+            </i>
+        </p>
+        </div>
+      </div> 
+
+</body>
+<script>
+var open = document.getElementById('hamburger');
+var changeIcon = true;
+const trigger = document.getElementById("hamburger");
+const bodyEl = document.getElementsByTagName("body")[0];
+let numOfClicks = 0;
+open.addEventListener("click", function(){
+    
+    var overlay = document.querySelector('.overlay');
+    var nav = document.querySelector('nav');
+    var icon = document.querySelector('.menu-toggle i');
+
+    overlay.classList.toggle("menu-open");
+    nav.classList.toggle("menu-open");
+   
+    if (changeIcon) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+
+        changeIcon = false;
+    }
+    else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+        changeIcon = true;
+        
+    }
+  
+});
+trigger.onclick = () => {
+    numOfClicks += 1;
+    // Check if number of clicks is an even value: 
+    // odd value - first click, even value - second click
+    const isNumOfClicksEven = numOfClicks % 2 === 0;
+    // On first click set body's overflow property to "auto", 
+    // On second click set body's overflow property to "hidden"
+    isNumOfClicksEven ? bodyEl.style.overflow = "auto" : bodyEl.style.overflow = "hidden";
+};
+
+</script>
+</html>

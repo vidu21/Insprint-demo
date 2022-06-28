@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/home/vidusingh/Insprint/img/logo.jpeg" type="image/icon type">
+    <title>INSPRINT Technologies</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/nav.css" >
+    <link rel="stylesheet" href="CSS/home.css" >
+</head>
+<body>
+    <header style="height: 85vh;
+	background: linear-gradient(to bottom, rgba(127, 127, 127, 0.8), rgba(132, 131, 131, 0.748)),
+    url(/home/vidusingh/Insprint/img/about.jpg) center no-repeat ;
+    background-size: cover;">
+        <div class="menu-toggle" id="hamburger">
+            <i style="color: #7ae0f7"class="fas fa-bars"></i>
+        </div>
+        <div class="overlay"></div>
+        <div class="container">
+            <nav>
+                <h1 class="brand"><a href="index.html">INS<span>P</span>RINT Technologies</a></h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="responsive-bg-w-text">
+            <div class="header">INSPRINT Technologies Pvt. Ltd.</div>
+            <div class="container-btn">
+                <a class="btn btn-border-2" href="index.html">Know More</a>
+            </div>
+          </div>
+</header>
+
+<div class="flex-container" style="font-size: 20px;">
+    <p>
+        INSPRINT Technologies is a global, technology consulting, and professional services organization, that designs and provides services in technology, 
+        strategy, consulting, and operations. Our scientifically driven, data-oriented, and delivery-focused approach enables us to deliver concrete breakthrough products and services, 
+        and make organizations more innovative. At INSPRINT Technologies we work with our customers, 
+        side by side building their institutional capabilities to better understand the market, uncover customer and user insights, evolve and create exceptional customer experiences, and successfully bring them to market.
+    </p>
+</div>
+
+  <section class="bg-img text-center">
+    <div class="sub-container">
+      <h2>
+        <strong>Subscribe To Our Newsletter</strong>
+      </h2>
+      <h6 class="font-alt">
+        Get our top new jobs delivered to your inbox
+      </h6>
+      <br><br>
+      <form class="form-subscribe" action="mailto: vidu.s1999@gmail.com" method="post" enctype="text/plain">
+        <div class="input-group">
+          <input type="text" class="form-control input-lg" placeholder="Your eamil address">
+          <span class="input-group-btn">
+            <button class="btn btn-success btn-lg" type="submit" >Subscribe</button>
+          </span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</body>
+<script>
+var open = document.getElementById('hamburger');
+var changeIcon = true;
+const trigger = document.getElementById("hamburger");
+const bodyEl = document.getElementsByTagName("body")[0];
+let numOfClicks = 0;
+open.addEventListener("click", function(){
+    
+    var overlay = document.querySelector('.overlay');
+    var nav = document.querySelector('nav');
+    var icon = document.querySelector('.menu-toggle i');
+
+    overlay.classList.toggle("menu-open");
+    nav.classList.toggle("menu-open");
+   
+    if (changeIcon) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+
+        changeIcon = false;
+    }
+    else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+        changeIcon = true;
+        
+    }
+  
+});
+trigger.onclick = () => {
+    numOfClicks += 1;
+    // Check if number of clicks is an even value: 
+    // odd value - first click, even value - second click
+    const isNumOfClicksEven = numOfClicks % 2 === 0;
+    // On first click set body's overflow property to "auto", 
+    // On second click set body's overflow property to "hidden"
+    isNumOfClicksEven ? bodyEl.style.overflow = "auto" : bodyEl.style.overflow = "hidden";
+};
+
+</script>
+</html>
