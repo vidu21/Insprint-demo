@@ -58,8 +58,9 @@
   }
   .col-image {
     background-size: cover;
-   
+    
     background-position:center center;
+    margin-bottom: 10px;
     
   }
   .left{
@@ -102,6 +103,7 @@
     }
     .Aligner-item {
       width: 90%;
+      margin-top: 10px;
     }
     
   }
@@ -121,6 +123,7 @@
 
 .bg-img{
     height: 40vh;
+    margin-top: 10px;
     border-top: 1px solid black;
     
 }
@@ -169,7 +172,7 @@ h6{
   border-bottom-right-radius:36px;
   background:#7ec855;
   border-color:#7ec855;
-  height:57px;
+  height:59px;
 }
 
 @media (max-width: 640px) {
@@ -177,6 +180,7 @@ h6{
         margin-top: 150px;
     }
 }
+
 @media screen and (max-width: 550px) {
   .form-subscribe {
    width: 100%;
@@ -188,7 +192,7 @@ h6{
     order:vertical;
     
   }
-.btn-success
+   .btn-lg
 {
   border-top-left-radius:36px;
   border-bottom-left-radius:36px;
