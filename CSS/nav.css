@@ -7,6 +7,8 @@
 html{
 	font-size: 10px;
 	font-family: "Roboto Cn", sans-serif;
+	max-width: 100%;
+    overflow-x: hidden;
     
 }
 
@@ -234,7 +236,7 @@ nav ul li a:hover::after{
 .btn {
     position: relative;
     display: inline-flex;
-    background-color: #6b6b6b;
+    background-color: #807e7e7c;
     align-items: center;
     justify-content: center;
     padding: 12px 27px;
