@@ -177,4 +177,16 @@ h6{
         margin-top: 150px;
     }
 }
+@media screen and (max-width: 450px) {
+  .form-subscribe {
+   width: 100%;
+    height: 20em;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column; 
+    margin-top: 30px;
+    order:vertical;
+    
+  }
 
+}
