@@ -8,6 +8,7 @@ html,body{
 	font-size: 10px;
 	font-family: "Roboto Cn", sans-serif;
     overflow-x: hidden;
+	overflow-y: scroll;
     
 }
 
