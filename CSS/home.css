@@ -13,6 +13,19 @@
     font-size: 3.2rem;
 
 }
+@media screen and (max-width:600px) {
+  .flex-container{
+    font-size: 2rem;
+    margin: none;
+    padding: none;
+    text-align: justify;
+  }
+}
+@media (max-width: 1040px) {
+  .align{
+    order:-1;
+  }
+}
 
 .col-text {
     height:30em;
