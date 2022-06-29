@@ -47,11 +47,9 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 @media screen and (max-width: 768px){
     .styled-input {
         width:100%;
+        float: none;
     }
-    html, body {
-        overflow-x: hidden;
-        max-width: fit-content;
-        }
+  
     
 }
 
@@ -132,10 +130,15 @@ textarea {
         float: none;
         text-align:center;
     }
-    html, body {
-        overflow-x: hidden;
-        max-width: fit-content;
-        }
+    input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .container-newsletter{
+        margin: auto;
+        width: 100%;
+    }
    
 }
 
