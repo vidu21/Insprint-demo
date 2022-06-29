@@ -1,6 +1,6 @@
 body {
-    background:  url("/home/vidusingh/Insprint/img/logo.jpeg") center no-repeat;;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    overflow:hidden;
+    overflow-y: scroll;
   }
   
   .contact-form-wrapper {
