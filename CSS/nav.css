@@ -75,6 +75,7 @@ nav{
 nav ul{
 	display: flex;
     text-align: center;
+	margin-top: 10px;
 }
 
 nav ul li{
