@@ -9,16 +9,17 @@
     margin-top: 40px;
     width: 70%;
     padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 3.2rem;
 
 }
 @media screen and (max-width:600px) {
   .flex-container{
     font-size: 2rem;
-    margin: none;
-    padding: none;
-    text-align: justify;
+    width: 90%;
+    /* margin: auto; */
+    /* padding: auto; */
+    text-align: left;
   }
 }
 @media (max-width: 1040px) {
@@ -26,7 +27,9 @@
     order:-1;
   }
 }
-
+.grid{
+  margin-top: 20px;
+}
 .col-text {
     height:30em;
   }
@@ -71,7 +74,7 @@
   }
   .col-image {
     background-size: cover;
-    
+   
     background-position:center center;
     
   }
@@ -116,7 +119,7 @@
     .Aligner-item {
       width: 90%;
       margin-top: 10px;
-    padding-top: 5px;
+      padding-top: 5px;
     }
     
   }
@@ -124,6 +127,7 @@
 .container-btn2{
    display: block;
     margin-top: 15px;
+    
 }
   
 .header-text{
@@ -195,9 +199,10 @@ h6{
 }
 
 @media screen and (max-width: 550px) {
-  .sub-container  {
+  .sub-container {
    width: 100%;
     height: 20em;
+    
     display: -webkit-flex;
     -webkit-flex-direction: column;
     flex-direction: column; 
@@ -210,8 +215,9 @@ h6{
   border-top-left-radius:36px;
   border-bottom-left-radius:36px;
   margin-top: 10px;
-  height:39px;
-margin-bottom: 20px;
+  height:19px;
+  margin-bottom: 20px;
+  align-items: center;
 }
 .form-subscribe .form-control
 {
@@ -223,5 +229,8 @@ margin-bottom: 20px;
   height: 60px;
   width: 100%;
 }
-
+.input-lg{
+  border-top-right-radius:36px;
+  border-bottom-right-radius:36px;
+}
 }
