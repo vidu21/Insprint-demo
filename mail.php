@@ -12,6 +12,9 @@
   $recipient = "vidu.s1999@gmail.com";
   $mailheader = "From: $email \r\n";
   mail($recipient, $subject, $content, $mailheader) or die("Error!");
+if (!mail($to_email, $subject, $message, $headers)) { 
+    print_r(error_get_last());
+  }
   header('Location: thanks.html');
   exit;
 ?>
