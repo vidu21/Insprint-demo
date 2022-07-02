@@ -1,3 +1,4 @@
+@import url('http://fonts.cdnfonts.com/css/vcr-osd-mono');
 *{
 	margin: 0;
 	padding: 0;
@@ -63,6 +64,7 @@ nav{
 	color: #eee;
 	margin-top: 15px;
 	margin-bottom: 10px;
+	font-family: 'VCR OSD Mono', sans-serif;
 	transform: translateX(-100rem);
 	animation: slideIn .5s forwards;
 	
