@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'VCR OSD Mono';
     font-style: normal;
-    src:  url("https://github.com/vidu21/Insprint-demo/blob/main/VCR-OSD-Mono.woff") format('woff');
+    src:  url(VCR-OSD-Mono.ttf) format('woff');
 }
 *{
 	margin: 0;
