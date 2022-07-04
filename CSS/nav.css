@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'VCR OSD Mono';
     font-style: normal;
-    src:  url('VCR_OSD_MONO_1.001%5B1%5D.ttf') format('woff');
+    src:  url(VCR_OSD_MONO_1.001%5B1%5D.ttf) format('woff');
 }
 *{
 	margin: 0;
