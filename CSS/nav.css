@@ -1,9 +1,9 @@
-@import url('http://fonts.cdnfonts.com/css/vcr-osd-mono');
+
 @font-face {
     font-family: 'VCR OSD Mono';
     font-style: normal;
     font-weight: 400;
-    src: local('VCR OSD Mono'), url('https://fonts.cdnfonts.com/s/14798/VCR_OSD_MONO_1.001[1].woff') format('woff');
+    src: local('/VCR_OSD_MONO_1.001[1].ttf'), url('https://fonts.cdnfonts.com/s/14798/VCR_OSD_MONO_1.001[1].woff') format('woff');
 }
 *{
 	margin: 0;
